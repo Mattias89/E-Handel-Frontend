@@ -8,10 +8,7 @@ function Navbar() {
     <nav>
       <div className="navbar-logo">
         <Link to="/">
-          <img
-            src="../../public/images/logo.jpg"
-            alt="Freaky Fashion Logo"
-          />
+          <img src="../../public/images/logo.jpg" alt="Freaky Fashion Logo" />
         </Link>
       </div>
       <SearchBar />
@@ -20,16 +17,16 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/categories/jackets">Vinterjackor</Link>
+          <Link>Byxor</Link>
         </li>
         <li>
-          <Link to="/categories/shirts">T-Shirts</Link>
+          <Link>T-Shirts</Link>
         </li>
         <li>
-          <Link to="/my-account">Mitt Konto</Link>
+          <Link>Mitt Konto</Link>
         </li>
         <li>
-          <Link to="/support">Kundtjänst</Link>
+          <Link>Kundtjänst</Link>
         </li>
       </ul>
     </nav>

@@ -1,35 +1,24 @@
 .product-card img {
     width: 200px;
-    /* Set a fixed width */
     height: 200px;
-    /* Set a fixed height */
     object-fit: cover;
-    /* This makes the image cover the set area without distorting aspect ratio */
     border-radius: 8px;
-    /* Optional: Adds rounded corners to your images */
 }
 
 
 .navbar-logo img {
     height: 80px;
-    /* Increase the height of the logo */
     margin-right: 30px;
-    /* Increase the spacing to the right of the logo */
     padding: 5px;
-    /* Add padding around the logo */
     border-radius: 10px;
-    /* Optional: Adds rounded corners if you want */
     background-color: #f8f8f8;
-    /* Optional: Adds a background color to the logo, adjust color as needed */
 }
 
-/* Base styling for the navigation bar */
 nav {
     display: flex;
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
-    /* Dark theme for the navbar */
     color: white;
 }
 
@@ -59,7 +48,6 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    /* Creates consistent spacing between menu items */
     margin: 0;
 }
 
@@ -73,34 +61,28 @@ nav ul li a {
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s, background-color 0.3s;
-    /* Smooth transition for hover effects */
 }
 
-/* Hover and active states for link */
 nav ul li a:hover,
 nav ul li a:active {
     color: #04AA6D;
-    /* Light green color for hover and active states */
     background-color: rgba(255, 255, 255, 0.2);
-    /* Slight background highlight */
     border-radius: 5px;
-    /* Rounded corners for the hover and active states */
 }
 
 .footer {
-    background-color: #333;  /* Dark background for the footer */
-    color: white;            /* Light text color for visibility */
-    text-align: center;      /* Center-align text */
-    padding: 20px 0;         /* Padding on top and bottom */
-    margin-top: 40px;        /* Space between the content and the footer */
-    font-size: 16px;         /* Suitable font size for footer text */
-  }
-  
-  .footer p {
-    margin: 5px 0;           /* Small margin for paragraph spacing */
-  }  
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 16px;
+}
 
-/* Responsive adjustments */
+.footer p {
+    margin: 5px 0;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -120,4 +102,60 @@ nav ul li a:active {
         width: 100%;
         text-align: center;
     }
+}
+
+.product-detail-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-image-container {
+    flex: 0 1 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info-container {
+    flex: 0 1 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-price {
+    color: green;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.add-to-cart {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+.loading,
+.error,
+.no-product {
+    font-size: 1.2rem;
+    color: red;
+    text-align: center;
+    width: 100%;
 }
