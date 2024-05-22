@@ -5,7 +5,7 @@ function ProductGrid() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://localhost:7288/produkt", { mode: "cors" })
+    fetch("https://mattiasehandelapi.azurewebsites.net/produkt", { mode: "cors" })
       .then((response) => response.json())
       .then((data) => {
         setProducts(

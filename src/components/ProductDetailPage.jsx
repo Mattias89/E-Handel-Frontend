@@ -15,7 +15,7 @@ function ProductDetailPage() {
       return;
     }
 
-    const url = `https://localhost:7288/produkt/${id}`;
+    const url = `https://mattiasehandelapi.azurewebsites.net/produkt/${id}`;
     fetch(url, { mode: "cors" })
       .then((response) => {
         if (!response.ok) {
