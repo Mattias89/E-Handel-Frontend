@@ -1,3 +1,11 @@
+name: Build and deploy Vite app to Azure Web App - MattiasHandelWeb
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
