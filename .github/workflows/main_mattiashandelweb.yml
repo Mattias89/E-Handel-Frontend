@@ -45,6 +45,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: vite-app
+          path: dist
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
