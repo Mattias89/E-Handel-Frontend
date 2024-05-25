@@ -8,7 +8,7 @@ function Navbar() {
     <nav>
       <div className="navbar-logo">
         <Link to="/">
-          <img src="../../public/images/logo.jpg" alt="Freaky Fashion Logo" />
+          <img src="/assets/images/logo.jpg" alt="Freaky Fashion Logo" />
         </Link>
       </div>
       <SearchBar />

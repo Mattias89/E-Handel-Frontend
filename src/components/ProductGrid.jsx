@@ -14,7 +14,7 @@ function ProductGrid() {
             name: item.namn,
             description: item.beskriving,
             price: `${item.pris} SEK`,
-            image: `../../public/images/${item.bildNamn}`,
+            image: `/assets/images/${item.bildNamn}`,
           }))
         );
       })
