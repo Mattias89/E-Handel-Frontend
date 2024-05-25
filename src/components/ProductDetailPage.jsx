@@ -29,7 +29,7 @@ function ProductDetailPage() {
           name: data.namn,
           description: data.beskriving,
           price: `${data.pris} SEK`,
-          image: `/assets/images/${data.bildNamn}`,
+          image: `./assets/images/${data.bildNamn}`,
         });
         setLoading(false);
       })
