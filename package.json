@@ -6,7 +6,7 @@
   "scripts": {
     "start": "serve -s dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp web.config dist/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
