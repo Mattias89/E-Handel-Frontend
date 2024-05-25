@@ -47,7 +47,7 @@ jobs:
           name: vite-app
 
       - name: List downloaded artifact contents
-        run: ls -la dist
+        run: ls -la 
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
