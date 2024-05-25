@@ -54,4 +54,4 @@ jobs:
           app-name: 'MattiasHandelWeb'
           slot-name: 'Production'
           package: ./build
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_420A74A552AE4B1DA710449F91E29D62 }}
