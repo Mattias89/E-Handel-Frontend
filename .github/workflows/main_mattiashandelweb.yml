@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: vite-app
-          path: dist/**
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,11 +53,16 @@ jobs:
           echo "Listing files in the downloaded artifact directory:"
           ls -la
 
+      - name: Verify dist directory
+        run: |
+          echo "Listing files in the dist directory:"
+          ls -la dist
+
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'MattiasHandelWeb'
           slot-name: 'Production'
-          package: .
+          package: dist
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_420A74A552AE4B1DA710449F91E29D62 }}
